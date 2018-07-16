@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Karen High"></meta>
+		<meta name="description" content="newSite page">
+
+		<title>A New Website</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<!-- add comments easily with command slash or window slash for instance, here is an example of semantic web HTML tag use, performance issues still uncertain
+			<header></header>
+			<nav>
+				<a href="www.google.com"></a>
+			</nav>
+			<footer>
+				<h5>Website created by KHIGH</h5>
+			</footer>-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded">
+		  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse justify-content-md-center" 
+		  			id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="sampleBlogPage.html">Sample Blog Page</a>
+		      <a class="nav-item nav-link" href="photosPage.html">My Photos</a>
+		      <a class="nav-item nav-link" href="bootstrapPage.html">Bootstrapped Page</a>
+		      <a class="nav-item nav-link" href="gradient.html">Gradient Background</a>
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="	button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Dropdown link</a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		          <a class="dropdown-item" href="#">Action</a>
+		          <a class="dropdown-item" href="#">Another action</a>
+		          <a class="dropdown-item" href="#">Something else here</a>
+		        </div>
+		    </div>
+		  </div>
+		</nav>
+		<header>
+			<h1>My Friends Blog</h1>
+			<p>This is a draft page for an idea I've had about having a website where my friends could log in and make a <em>blog entry</em> for all of us to enjoy together.
+			</p>
+		</header>
+
+		<div id=login>  <!-- for styling blocks - use span for inline styling -->
+			<h2>Friends Log In Here</h2>
+			<p>Please enter your <strong>username</strong> and password.</p>
+			<form method="POST">	<!--instead of default GET so data does not show up in tagline-->
+				Username: <input type="text" name="username"><br>
+				Password: <input type="password" name="password" minlength="6"><br>
+				<input type="submit" value="Log In">
+				<input type="reset">
+			</form>
+		</div>
+		<div id=ideaList>
+			<h2>Blog Ideas</h2>
+			<ol>
+				<li>Career change
+					<a href="http://www.khigh.info">
+						<h3>Karen's website</h3>
+					</a>
+				</li>
+				<li>Daily challenges</li>
+				<li>Vacation adventures <br>
+					<h3>Niagara Falls</h3>
+					<img id=falls src="images/niagaraFalls.jpg"> 
+				</li>
+			</ol>		
+		</div>
+		<div id=register>
+			<h2>Would You Like to contribute a Blog?</h2>
+			<h3>Register Here</h3>
+			<form>
+				First Name: <input type="text" name="firstname"><br>
+				Last Name: <input type="text" name="lastname"><br>
+				Email: <input type="email" name="email" required><br>
+				Interest Level: 	<!-- to choose just one -->
+					<input type="radio" name="interest" value="blog">Blog
+					<input type="radio" name="interest" value="read">Read
+					<input type="radio" name="interest" value="comment">Comment<br>
+				Outlook on Life:  <!-- to choose multiples -->
+					<input type="checkbox" name="optimist">Optimist
+					<input type="checkbox" name="pessimist">Pessimist
+					<input type="checkbox">Realist
+					<input type="checkbox">Idealist<br>
+				Outlook Dropdown: <!-- add multiple to select more than one -->
+					<select name="Outlook">
+						<option value="optimist">optimist</option>
+						<option value="pessimist">pessimist</option>
+						<option value="realist">realist</option>
+						<option value="iealist">idealist</option>
+						<option value="narcissist">narcissist</option>
+					</select><br>
+				Birthday: <input type="date" name="Birthday"><br>
+				<input type="submit" value="Register">
+				<input type="reset">
+			</form>
+		</div>
+		<footer>Photo by Justin Casey on Unsplash
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+/*
+Standard css instructons:
+    Selector {
+		Property: value;
+	}
+References:  CSS Almanac on CSS-Tricks page and CSS W3schools
+			Background images available on UnSplash
+			colors on paletton.com
+			www.w3schools.com/cssref/css3_browsersupport.asp
+*/
+body {
+	background-image: url(images/justin-casey-528838-unsplash.jpg);
+	background-size: cover;
+	font-family: fantasy; 
+	margin: 0px;
+}
+
+.navbar {
+	margin-bottom: 20px;
+	height: 50px;
+}
+
+header {
+	text-align: center;
+}
+
+h1 {
+	color: darkgreen;
+	text-shadow: 2px 2px black;
+	font-size: 3em;
+	border-bottom: 5px solid darkgreen;
+	width: 600px;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+
+div {
+	margin: 10px;
+}
+
+a {
+	margin: 10px;
+}
+
+h2 {
+	color: #522B00;
+}
+
+p {
+	font-size: 1.5em;
+	margin: 10px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 550px;
+}
+
+img {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	border-radius: 10px;
+	border: 3px solid blue;
+	transition: all 1s;
+}
+
+img:hover {
+	transform: scale(1.1);
+}
+
+#falls {
+	width: 300px;
+	height: 150px;
+	box-shadow: 5px 5px black;
+}
+
+
+#register {
+	background-color: rgba(180,185,95,0.8);
+	width: 500px;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#blog {
+	margin-bottom: 200px;
+}
+
+footer {
+	color: white;
+	text-align: right;
+}
